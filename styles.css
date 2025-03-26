@@ -66,6 +66,12 @@ h1 {
   padding: 1.2rem;
   border-radius: 15px;
   min-width: 90px;
+  width: 90px; /* Fixed width for consistency */
+  height: 90px; /* Fixed height for consistency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -191,10 +197,17 @@ h1 {
 
   .age-box {
     min-width: 70px;
+    width: 70px; /* Fixed width for small screens */
+    height: 70px; /* Fixed height for small screens */
     padding: 0.8rem;
   }
 
   .age-box span {
     font-size: 1.5rem;
+  }
+  
+  .age-box p {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
   }
 }
