@@ -1,4 +1,3 @@
-// Translations for different languages
 const translations = {
   en: {
     title: "Rocky's Age",
@@ -33,29 +32,23 @@ const translations = {
     birthDate: "Nacido el 11 de Diciembre de 2024",
     birthdayMessage: "¡Feliz Cumpleaños Rocky! 🎉"
   },
-  // Add more languages as needed
 };
 
-// Function to get user's language
 function getUserLanguage() {
   const browserLang = navigator.language || navigator.userLanguage;
-  const lang = browserLang.split('-')[0]; // Get the primary language code
+  const lang = browserLang.split('-')[0];
   
-  // Check if we have translations for this language
   if (translations[lang]) {
     return lang;
   }
   
-  // Default to English if the language is not supported
   return 'en';
 }
 
-// Function to update page text
 function updatePageLanguage() {
   const lang = getUserLanguage();
   const texts = translations[lang];
   
-  // Update all text elements
   document.querySelector('h1').textContent = texts.title;
   
   const ageBoxes = document.querySelectorAll('.age-box p');
@@ -70,5 +63,4 @@ function updatePageLanguage() {
   document.querySelector('#birthday-celebration h2').textContent = texts.birthdayMessage;
 }
 
-// Run when the page loads
 document.addEventListener('DOMContentLoaded', updatePageLanguage);

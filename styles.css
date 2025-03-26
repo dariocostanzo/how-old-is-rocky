@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.4); /* Slightly more transparent */
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 2rem 2rem;
   border-radius: 20px;
   text-align: center;
@@ -36,8 +36,8 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 2.5rem; /* Increased space between header and boxes */
-  color: #f39c12; /* Softer orange to match boxes */
+  margin-bottom: 2.5rem;
+  color: #f39c12;
   text-shadow: none;
   font-weight: bold;
 }
@@ -46,12 +46,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.8rem; /* Reduced gap */
+  gap: 0.8rem;
   margin-bottom: 1.5rem;
 }
 
 .age-box {
-  background-color: rgba(243, 156, 18, 0.8); /* Slightly more opaque for better readability */
+  background-color: rgba(243, 156, 18, 0.8);
   padding: 1rem;
   border-radius: 12px;
   min-width: 80px;
@@ -62,12 +62,10 @@ h1 {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Removed transition and hover effects */
   position: relative;
   overflow: hidden;
 }
 
-/* Remove hover effect */
 .age-box:hover {
   transform: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +79,7 @@ h1 {
   z-index: 2;
   display: block;
   margin-bottom: 5px;
-  text-shadow: none; /* Removed shadow */
+  text-shadow: none;
 }
 
 .age-box p {
@@ -92,7 +90,7 @@ h1 {
   z-index: 2;
   font-weight: 500;
   letter-spacing: 0.5px;
-  text-shadow: none; /* Removed shadow */
+  text-shadow: none;
 }
 
 .birth-date {
@@ -100,8 +98,8 @@ h1 {
   margin-top: 1.5rem;
   color: white;
   font-weight: bold;
-  text-shadow: none; /* Removed shadow */
-  background-color: rgba(243, 156, 18, 0.8); /* Slightly more opaque for better readability */
+  text-shadow: none;
+  background-color: rgba(243, 156, 18, 0.8);
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
   display: inline-block;
@@ -111,7 +109,7 @@ h1 {
   margin-bottom: 2.5rem;
   color: white;
   font-weight: bold;
-  text-shadow: none; /* Removed shadow */
+  text-shadow: none;
   background-color: rgba(243, 156, 18, 0.7);
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
@@ -124,7 +122,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white; /* Changed to white background */
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,7 +132,7 @@ h1 {
 
 #birthday-celebration h2 {
   font-size: 3rem;
-  color: #e67700; /* Updated to match the darker orange */
+  color: #e67700;
   text-align: center;
   margin-bottom: 2rem;
   animation: pulse 2s infinite;
@@ -193,8 +191,8 @@ h1 {
 
   .age-box {
     min-width: 70px;
-    width: 70px; /* Fixed width for small screens */
-    height: 70px; /* Fixed height for small screens */
+    width: 70px;
+    height: 70px;
     padding: 0.8rem;
   }
 
