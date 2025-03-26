@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-image: url("rocky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.container {
+  background-color: white; /* Changed to white background */
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  width: 600px;
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #FF9800; /* Orange border */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ff9800; /* Orange text */
+  text-shadow: none; /* Removed shadow */
+  font-weight: bold;
+}
+
+.age-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.age-box {
+  background-color: #FF9800; /* Keeping orange background */
+  padding: 1.2rem;
+  border-radius: 15px;
+  min-width: 90px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.age-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.age-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+  z-index: 1;
+}
+
+.age-box span {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.age-box p {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.birth-date {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ff9800; /* Orange text */
+  font-weight: bold;
+  text-shadow: none; /* Removed shadow */
+}
+
+#birthday-celebration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Changed to white background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#birthday-celebration h2 {
+  font-size: 3rem;
+  color: #ff9800; /* Orange text */
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: pulse 2s infinite;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.balloon {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  animation: float 15s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .age-box {
+    min-width: 70px;
+    padding: 0.8rem;
+  }
+
+  .age-box span {
+    font-size: 1.5rem;
+  }
+}
