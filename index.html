@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Old is Rocky?</title>
+    <meta name="description" content="Track Rocky's age in years, months, weeks, days, hours, and minutes since birth.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="bone-favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="bone-favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
+    <main class="container" role="main">
         <h1>Rocky's Age</h1>
-        <div class="age-container">
-            <div class="age-box">
-                <span id="years">0</span>
+        <div class="age-container" aria-label="Rocky's age breakdown">
+            <div class="age-box" aria-label="Years">
+                <span id="years" aria-live="polite">0</span>
                 <p>Years</p>
             </div>
-            <div class="age-box">
-                <span id="months">0</span>
+            <div class="age-box" aria-label="Months">
+                <span id="months" aria-live="polite">0</span>
                 <p>Months</p>
             </div>
-            <div class="age-box">
-                <span id="weeks">0</span>
+            <div class="age-box" aria-label="Weeks">
+                <span id="weeks" aria-live="polite">0</span>
                 <p>Weeks</p>
             </div>
-            <div class="age-box">
-                <span id="days">0</span>
+            <div class="age-box" aria-label="Days">
+                <span id="days" aria-live="polite">0</span>
                 <p>Days</p>
             </div>
-            <div class="age-box">
-                <span id="hours">0</span>
+            <div class="age-box" aria-label="Hours">
+                <span id="hours" aria-live="polite">0</span>
                 <p>Hours</p>
             </div>
-            <div class="age-box">
-                <span id="minutes">0</span>
+            <div class="age-box" aria-label="Minutes">
+                <span id="minutes" aria-live="polite">0</span>
                 <p>Minutes</p>
             </div>
-            <!-- Seconds box removed -->
         </div>
         <p class="birth-date">Born on December 11, 2024</p>
-    </div>
+    </main>
 
-    <div id="birthday-celebration" class="hidden">
+    <div id="birthday-celebration" class="hidden" aria-hidden="true">
         <h2>Happy Birthday Rocky! 🎉</h2>
         <div id="confetti"></div>
     </div>
